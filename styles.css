@@ -1,6 +1,7 @@
 #desktop{
     width:100%;
     height:calc(100% - 40px);
+    background-color: blueviolet;
     background-image: url('./images/wallpaper.jpg');
     background-size:cover;
     background-position:center;
