@@ -38,9 +38,10 @@ html, body{
     background: transparent;
     color:white;
     border:none;
-    height:100%;
-    padding:0 10px;
-    font-size: 14px;
+    height:95%;
+    padding:2.5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
     cursor:pointer;
     transition:background 0.2s;
 
