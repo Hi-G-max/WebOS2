@@ -11,8 +11,8 @@ setInterval ( function(){
 },1000);
 
 //calendar
-document.querySelector("#calendar-popup").addEventListener("click",function(){
-    const calendar = document.getElementById("#calendar-popup");
+document.querySelector("#time").addEventListener("click",function(){
+    const calendar = document.getElementById("calendar");
     if (calendar.style.display === "none") {
         calendar.style.display = "block";
     }else{
