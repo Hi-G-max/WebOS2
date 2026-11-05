@@ -5,7 +5,17 @@ setInterval ( function(){
         const timestring = now.toLocaleTimeString();
         const datestring = now.toLocaleDateString();
 
-        timeElement.innerHTML = `${timestring}<br>${datestring}`;
+        timeElement.innerHTML = `${datestring}<br>${timestring}`;
     }
 
 },1000);
+
+//calendar
+document.querySelector("#calendar-popup").addEventListener("click",function(){
+    const calendar = document.getElementById("#calendar-popup");
+    if (calendar.style.display === "none") {
+        calendar.style.display = "block";
+    }else{
+        calendar.style.display ="none"
+    }        
+});
