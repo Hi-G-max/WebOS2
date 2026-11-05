@@ -54,7 +54,7 @@ html, body{
 
 .calendar{
     position:fixed;
-    bottom:39px;
+    bottom:40px;
     right:10px;
     background:rgba(20,20,30,0.75);
     backdrop-filter: blur(16px);
