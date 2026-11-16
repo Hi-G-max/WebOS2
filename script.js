@@ -1,6 +1,10 @@
-setInterval ( function(){
-    const timeElement = document.querySelector("#time");
-    if (timeElement){
+//caches elements
+const timeBtn = document.getElementById("time");
+const calendar = document.getElementById("calendar");
+
+//clock
+ function updateClock(){
+    if (timeBtn){
         const now = new Date ();
         const timestring = now.toLocaleTimeString();
         const datestring = now.toLocaleDateString();
@@ -8,14 +12,11 @@ setInterval ( function(){
         timeElement.innerHTML = `${datestring}<br>${timestring}`;
     }
 
-},1000);
+}
+updateClock();
+setInterval(updateClock,1000);
 
-//calendar
-document.querySelector("#time").addEventListener("click",function(){
-    const calendar = document.getElementById("calendar");
-    if (calendar.style.display === "none") {
-        calendar.style.display = "block";
-    }else{
-        calendar.style.display ="none"
-    }        
+//calendar toggle
+timeBtn.addEventListener("click",function(){
+    calendar.classList.toggle("hidden");
 });

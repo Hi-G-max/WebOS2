@@ -6,6 +6,10 @@ html, body{
     overflow:hidden;
 }
 
+.hidden{
+    display:none !important;
+}
+
 
 #desktop{
     width:100%;
@@ -67,3 +71,16 @@ html, body{
     padding:15px;
     font-family: sans-serif;
 }
+
+#calendar-title{
+    text-align: center;
+    margin:0 0 10px 0;
+}
+
+
+
+#calendar-days div:hover{
+   background-color: rgba(255,255,255,0.1); 
+
+}
+
