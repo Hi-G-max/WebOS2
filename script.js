@@ -9,7 +9,7 @@ const calendar = document.getElementById("calendar");
         const timestring = now.toLocaleTimeString();
         const datestring = now.toLocaleDateString();
 
-        timeElement.innerHTML = `${datestring}<br>${timestring}`;
+        timeBtn.innerHTML = `${datestring}<br>${timestring}`;
     }
 
 }
