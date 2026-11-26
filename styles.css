@@ -77,10 +77,37 @@ html, body{
     margin:0 0 10px 0;
 }
 
+#calendar-days{
+    display:grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap:5px;
+    text-align:center;
 
+}
+
+#calendar-days div{
+    padding:6px;
+    border-radius: 6px;
+}
 
 #calendar-days div:hover{
    background-color: rgba(255,255,255,0.1); 
 
 }
+
+#clock-page{
+    background:rgba(20, 20, 20, 0.85);
+    min-height: 250px;
+    width:300px;
+    bottom:50px;
+    right:50px;
+}
+
+#clock{
+    cursor:pointer;
+}
+
+
+
+
 
