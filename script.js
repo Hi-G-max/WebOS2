@@ -2,6 +2,7 @@
 const timeBtn = document.getElementById("time");
 const calendar = document.getElementById("calendar");
 const clockBtn = document.getElementById("clockbtn");
+const clockpg = document.getElementById("clock-page");
 
 //clock
  function updateClock(){
@@ -23,5 +24,5 @@ timeBtn.addEventListener("click",function(){
 });
 
 clockBtn.addEventListener("click",function(){
-    clockBtn.classList.toggle("hidden");
+    clockpg.classList.toggle("hidden");
 });
